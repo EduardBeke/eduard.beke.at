@@ -1,0 +1,14 @@
+{
+  "name": "eduard.beke.at",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^1.5.0"
+  }
+}
