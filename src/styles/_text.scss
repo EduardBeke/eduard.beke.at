@@ -1,0 +1,75 @@
+@import url("http://fonts.cdnfonts.com/css/poppins");
+
+:root {
+  --text-size-modifier: 0;
+}
+
+$weight-slim: 300;
+$weight-normal: 400;
+$weight-medium: 500;
+$weight-semi-bold: 600;
+
+@function withTextSizeModifier($base) {
+  @return calc($base + var(--text-size-modifier) * 1px);
+}
+
+@mixin text {
+  font-family: "Poppins", Arial, sans-serif;
+  font-style: normal;
+}
+
+@mixin textXlNormal {
+  @include text();
+  font-weight: $weight-normal;
+  font-size: withTextSizeModifier(20px);
+  line-height: withTextSizeModifier(35px);
+}
+
+@mixin displaySmSemiBold {
+  @include text();
+  font-weight: $weight-semi-bold;
+  font-size: withTextSizeModifier(30px);
+  line-height: withTextSizeModifier(43px);
+}
+
+@mixin displaySmSlim {
+  @include text();
+  font-weight: $weight-semi-bold;
+  font-size: withTextSizeModifier(30px);
+  line-height: withTextSizeModifier(43px);
+}
+
+@mixin displayMdSlim {
+  @include text();
+  font-weight: $weight-slim;
+  font-size: withTextSizeModifier(36px);
+  line-height: withTextSizeModifier(49px);
+}
+
+@mixin displayLgSlim {
+  @include text();
+  font-weight: $weight-slim;
+  font-size: withTextSizeModifier(42px);
+  line-height: withTextSizeModifier(55px);
+}
+
+@mixin displayXlSemiBold {
+  @include text();
+  font-weight: $weight-semi-bold;
+  font-size: withTextSizeModifier(48px);
+  line-height: withTextSizeModifier(50px);
+}
+
+@mixin textMdMedium {
+  @include text();
+  font-weight: $weight-medium;
+  font-size: withTextSizeModifier(20px);
+  line-height: withTextSizeModifier(30px);
+}
+
+@mixin textSmNormal {
+  @include text();
+  font-weight: $weight-normal;
+  font-size: withTextSizeModifier(18px);
+  line-height: withTextSizeModifier(24px);
+}
