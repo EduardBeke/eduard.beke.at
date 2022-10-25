@@ -8,14 +8,17 @@ import "../styles/global.scss";
 import "../styles/_text.scss";
 ---
 
-<div>
-  <Navbar />
-  <Section id={Sections.About}>
-    <Main />
-  </Section>
-  <Section id={Sections.Projects} grayBg={false} withTitle={true}>
-    <Projects />
-  </Section>
-</div>
-
-<style lang="scss"></style>
+<html lang="en">
+  <head>
+    <title>Eduard Beke</title>
+  </head>
+  <body>
+      <Navbar />
+      <Section id={Sections.About}>
+        <Main />
+      </Section>
+      <Section id={Sections.Projects} grayBg={false} withTitle={true}>
+        <Projects />
+      </Section>
+  </body>
+</html>
