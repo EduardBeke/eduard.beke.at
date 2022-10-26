@@ -128,7 +128,7 @@ export default {
   @include text();
   color: #fff;
   width: fit-content;
-  padding: 0 8px;
+  padding: 1px 8px;
   border-radius: 6px;
 }
 .iframeWrapper {
